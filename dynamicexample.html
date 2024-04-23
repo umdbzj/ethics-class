@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h1>Examples of Dynamic Webpages with JavaScript</h1>
+<h2>Changing Text with JavaScript</h2>
+
+
+<button type="button"
+onclick="document.getElementById('changeme').innerHTML = 'I am changed!'">
+Click me to change text.</button>
+
+<p id="changeme">I need to change.</p>
+
+<h2>Using an Image Map</h2>
+<p>Click in the upper left of the image:<br> </p>
+		<img src="orchids.jpeg" alt="A double-stemmed white orchid" usemap="#ulmap">
+		<map name="ulmap">
+			<area shape="rect" coords="0,0,200,200" alt="upper left" href="#" onclick="upperLeft()">	
+		</map>
+
+		<script>
+			function upperLeft() {
+				alert("Congratulations! You identified the upper left!");
+			}
+		</script>
+		
+		<p>See the <a href="https://www.w3schools.com/html/html_images_imagemap.asp">
+		image map tutorial</a> at W3 schools for more options.</p>
+
+<h2>SVG Drawing Example</h2>
+<svg width="200" height="200">
+	<circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="gold" />
+</svg>
+
+		<p>See the <a href="https://www.w3schools.com/graphics/svg_inhtml.asp">
+		SVG tutorial</a> at W3 schools for more options.</p>
+		
+<h2>Responsive SVG</h2>
+
+
+<h2>Acknowledgements</h2>
+<p>Examples come from or were inspired by several sources:</p>
+<ul>
+<li><a href="https://www.w3schools.com/">W3 Schools</a> </li>
+<li>Professor Melissa Lynn's course materials</li>
+</ul>
+
+</body>
+
+</html>
