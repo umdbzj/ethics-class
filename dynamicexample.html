@@ -38,7 +38,32 @@ Click me to change text.</button>
 		<p>See the <a href="https://www.w3schools.com/graphics/svg_inhtml.asp">
 		SVG tutorial</a> at W3 schools for more options.</p>
 		
+<h2>Dynamic SVG Drawing</h2>
+<p>This circle should grow from a very small circle to one with radius of 100 px while the
+color shifts from blue to green. Note that the colors change faster than the circle grows.  This one is by Prof. Lynn</p>
+
+<svg width="500" height="300">
+	<circle cx="250" cy="150" r="0" style="fill:blue">
+		<animate attributeType="CSS" attributeName="fill" from="blue" to="green" dur="3s" repeatCount="indefinite" />
+		<animate attributeType="XML" attributeName="r" fill="freeze" from="0" to="100" dur="5s" repeatCount="indefinite" />
+
+	</circle>
+</svg>
+
 <h2>Responsive SVG</h2>
+<p>This one should draw a dark blue background and then draw a circle at the point where 
+the user clicked, making it look like the circle jumped there.  Eventually, it would also be fun
+to make the circle change color, if that's possible. Oh, and make it look like cat. This is inspired by Prof. Lynn.</p>
+
+	<svg id="AnimatedExample" width="500" height="300" style="background-color:DarkBlue">
+		<g id="Cat" stroke="white" fill="white" transform="translate(50,125)">
+			<circle cx="0" cy="0" r="10" />
+
+		</g>
+	</svg>
+	<script type="text/javascript" src="move_cat.js"></script>
+
+
 
 
 <h2>Acknowledgements</h2>
