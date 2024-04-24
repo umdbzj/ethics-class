@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Quotes Example</title>
+</head>
+<body>
+<h1>Random Quote</h1>
+<p>Each time the page is reloaded, you should get a new quote.</p>
+<p>This is an example of using the Math library functions, creating a user function,
+defining and using variables, using the random() function, and creating an array.  
+<blockquote> 
+  <hr>
+  <p> 
+    <script type="text/javascript" language="JavaScript">
+
+// <!-- Begin
+
+function get_random()
+
+{
+
+    var ranNum= Math.round(Math.random()*73);
+
+    return ranNum;
+
+}
+
+var whichQuote=get_random();
+var numquotes = 73;
+quotes = new Array(numquotes+1);
+
+quotes[0] = "Don't be irreplaceable - if you can't be replaced, you can't be promoted.";
+
+quotes[1] = "Wisdom is knowing what path to take next ... integrity is taking it.";
+
+quotes[2] = "In times of change, there is no incentive so great, and no medicine so powerful as hope for a better tomorrow.";
+
+quotes[3] = "In matters of style, swim with the currents...in matters of principle, stand like a rock. - Thomas Jefferson";
+
+quotes[4] = "Truth is a torch that shines through the fog without dispelling it. Always be true to your work, your word, and your friends, and you will never live a day without peace.";
+
+quotes[5] = "True heroism is remarkably sober, very undramatic. It is not the urge to surpass all others at whatever cost, but the urge to serve others whatever the cost.";
+
+quotes[6] = "Anyone can hold the helm when the sea is calm...but in stormy waters it takes strength, commitment and responsibility to stay the course. We cannot adjust the winds, but we can always adjust our sails, and when it comes our turn to hold the helm...we must be strong.";
+
+quotes[7] = "In the end, each of us will be judged by our standard of life, not by our standard of living - by our measure of giving, not by our measure of wealth - by our simple goodness, not by our seeming greatness.";
+
+quotes[8] = "Courage is daring to take that first step, or a different path.  It is the decision to place your dreams above your fears.";
+
+quotes[9] = "Where there is passion and desire there will always be a new frontier.";
+
+quotes[10] = "Destiny is not a matter of chance, it is a matter of choice.  It is not a thing to be waited for, it is a thing to be achieved.";
+
+quotes[11] = "Those who preserve their integrity remain unshaken by the storms of daily life. They do not stir like leaves on a tree or follow the herd where it runs. In their mind remains the ideal attitude and conduct of living. This is not something given to them by others. It is their roots...It is a strength that exists deep within them. - Anonymous Native American";
+
+quotes[12] = "Our achievements are shaped by the terrain of our lives and the strength of the foundations we set. In building the life we've imagined, we must be true to our beliefs, dare to be ethical, and strive to be honorable. For integrity is the highest ground to which we can aspire.";
+
+quotes[13]= "The people who get on in this world are the people who get up and look for the circumstances they want, and, if they can't find them, make them.";
+
+quotes[14] = "The best way to predict the future is to invent it. - Alan Kay";
+
+quotes[15] = "Go over, go under, go around, or go through.  But never give up.";
+
+quotes[16] = "Trust is the emotional glue that holds every team together ... in times of trial, it transforms a group of committed individuals into a team of individuals committed to each other.";
+
+quotes[17] = "The greatest discovery of any generation is that a human being can alter his life by altering his attitude. - William James";
+
+quotes[18] = "Greatness is not in where we stand, but in what direction we are moving.  We must sail sometimes with the wind and sometimes against it - but sail we must, and not drift, nor lie at anchor. - Oliver Wendell Holmes";
+
+quotes[19] = "The race goes not always to the swift ... but to those who keep on running.";
+
+quotes[20] = "When a team of dedicated individuals makes a commitment to act as one ... the sky's the limit.";
+
+quotes[21] = "A ship in the harbor is safe ... but that's not what ships were made for.";
+
+quotes[22] = "Unless you try to do something beyond what you have already mastered, you will never grow.";
+
+quotes[23] = "Attitude is a little thing that makes a BIG difference.";
+
+quotes[24] = "True leaders are not those who strive to be first but those who are first to strive and who give their all for the success of the team.  True leaders are the first to see the need, envision the plan and empower the team for action.  By the strength of the leader's committment, the power of the team is unleased.";
+
+quotes[25] = "It is a fact that in the right formation, the lifting power of many wings can achieve twice the distance of any bird flying alone.";
+
+quotes[26] = "Our lives are not determined by what happens to us but by how we react to what happens.  Not by what life brings to us but by the attitude we bring to life.";
+
+quotes[27] = "When you want what you've never had, you must do what you've never done.";
+
+quotes[28] = "Always choose truth over popularity.";
+
+quotes[29] = "Courage means taking a chance ... in spite of our fears.";
+
+quotes[30] = "Courage does not always roar.  Sometimes, it is the quiet voice at the end of the day saying, 'I will try again tomorrow.'";
+
+quotes[31] = "You'll always miss 100% of the shots you don't take.";
+
+quotes[32] = "This is the beginning of a new day.  You have been given this day to use as you will.  You can waste it or use it for good.  What you do today is important because you are exchanging a day of your life for it.  When tomorrow comes, this day will be gone forever; in its place is something that you have left behind ... let it be something good.";
+
+quotes[33] = "I expect to pass through this world but once.  Any good I can do, or any kindness that I can show, let me do it now, for I shall not pass this way again.";
+
+quotes[34] = "Watch your thoughts, for they become words.  Choose your words, for they become actions.  Understand your actions, for they become habits.  Study your habits, for they become your character.  Develop your character, for it becomes your destiny.";
+
+quotes[35] = "Your true character is revealed by the clarity of your convictions, the choices you make, and the promises you keep.  Hold strongly to your principles and refuse to follow the currents of convenience.  What you say and do defines who you are, and who you are ... you are forever.";
+
+quotes[36] = "How you practice in the world is your very own curriculum - Kim Riordan";
+
+quotes[37] = "What nobler profession than to touch the next generation - to see children hold your understanding in their eyes, your hope in their lives, your world in their hands.  In their success you find your own and so to them you give your all.";
+
+quotes[38] = "Never argue with an idiot.  They drag you down to their level, then beat you with experience.";
+
+quotes[39] = "Education is what survives when what has been learned has been forgotten.  - B.F. Skinner";
+
+quotes[40] = "People are always willing to take advice if it accords with their own wishes. - Lady Marguerite Blessington";
+
+quotes[41] = "[Criticism has] the power to do good when there is something that must be destroyed, dissolved, or reduced, but [it is] capable only of harm when there is something to be built. - Carl Jung";
+
+quotes[42] = "We are better than we know.  If we can be made to see it, then perhaps for the rest of our lives we will be unwilling to settle for less. - Barbara LaFontaine";
+
+quotes[43] = "Nothing can bring you peace but yourself. - Ralph Waldo Emerson";
+
+quotes[43] = "Our own heart, and not others' opinions of us, forms our true honor. - Friedrich von Schiller";
+
+quotes[44] = "Charity and personal force are the only investments worth anything. - Walt Whitman";
+
+quotes[45] = "Seek not the good in external things - seek it in yourselves ";
+
+quotes[46] = "Every little action of the common day makes or unmakes character. - Oscar Wilde";
+
+quotes[47] = "We must take care to live not merely a long life, but a full one.  For living a long life requires only good fortune, but living a full life requires character.  Long is the life that is fully lived.  It is fulfilled only when the mind supplies its own good qualities and empowers itself from within. - Seneca";
+
+quotes[48] = "We are usually convinced more easily by reasons we have found ourselves than by those which have occurred to others. - Blaise Pascal";
+
+quotes[49] = "Facts are stubborn, but statistics are more pliable. - Mark Twain";
+
+quotes[50] = "Problems cannot be solved at the same level of awareness that created them. - Einstein";
+
+quotes[51] = "I'm sorry, but your reality doesn't seem to have been installed.";
+
+quotes[52] = "Moronic students. Stupid police. Fraudulent studies. Whacko students. Clueless administration. Sounds like your average institution of higher learning. -- Gerard Van Der Leun, HotWired writer";
+
+quotes[53] = "If you have any trouble sounding condescending, find a Unix user to show you how it's done. - Scott Adams";
+
+quotes[54] = "Beginning today, treat everyone you meet, friend or foe, loved one or stranger, as if they were going to be dead at midnight. Extend to each person, no matter how trivial the contact, all the care and kindness and understanding and love that you can muster, and do it with no thought of any reward. Your life will never be the same again. - Og Mandino";
+
+quotes[55] = "Vision without resources is hallucination. -Mark Yudof";
+
+quotes[56] = "If you've been passed over before, it's time to quit being disappointed and recognize that you might have to jump to another lily pad. You'll thank your old company later for helping you get out in time. - Harvey MacKay";
+
+quotes[57] = "Virtue is to be valued in the proper context; only a sword will do in battle. - Deng Ming-Dao";
+
+quotes[58] = "When I hear somebody sigh, 'Life is hard,' I am always tempted to ask, 'Compared to what?' -- Sydney J. Harris";
+
+quotes[59] = "I have learned from experience that the greater part of our happiness or misery depends on our dispositions and not on our circumstances. -- Martha Washington";
+
+quotes[60] = "It's essential to distinguish between events that are really beyond your control and events you caused yourself. -- Barbara Sher";
+
+quotes[61] = "Two things a man should never be angry at: what he can help, and what he cannot help. -- Thomas Fuller";
+
+quotes[62] = "Pay no attention to what the critics say; no statue has ever been put up to a critic. -- Jean Sibelius";
+
+quotes[63] = "A sharp sword in a weak hand is most dangerous to the holder.";
+
+quotes[64] = "True hope dwells on the possible, even when life seems to be a plot written by someone who wants to see how much adversity we can overcome. -- Walter Anderson";
+
+quotes[65] = "To enjoy the things we ought and to hate the things we ought has the greatest bearing on excellence of character. -- Aristotle";
+
+quotes[66] =  "The ancient Greek definition of happiness was the full use of your powers along lines of excellence. -- John F. Kennedy";
+
+quotes[67] = "It takes a long time to bring excellence to maturity. -- Publilius Syrus";
+
+quotes[68] =  "The sad truth is that excellence makes people nervous. -- Shana Alexander";
+
+quotes[69] = "It is a nuisance, but God has chosen to give the easy problems to the physicists. -- Lave and March";
+
+quotes[70] = "Everything should be made as simple as possible, but not simpler.";
+
+quotes[71] = "Whenever you find youself on the side of the majority, it is time to pause and reflect. -- Mark Twain";
+
+quotes[72] = "Anyone who lives within their means suffers from a lack of imagination. -- Oscar Wilde";
+
+quotes[73] = "Adventure isn't hanging on a rope off the side of a mountain. Adventure is an attitude that we must apply to the day to day obstacles of life. Facing new challenges, seizing new opportunities, testing our resources against the unknown and in the process, discovering our own unique potential - John Amatt"; 
+
+document.write('<blockquote>');
+document.write('' + quotes[whichQuote] + '</blockquote><br>');
+//  End -->
+</script>
+  </p>
+  <hr>
+</blockquote>
+</body>
+</html>
