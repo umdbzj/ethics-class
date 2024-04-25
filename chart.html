@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>Change in number of women in CS fields</title>
   <script type="text/javascript">
   window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer", {
+    var chart = new CanvasJS.Chart("chartLocation", {
 
       title:{
-        text: "Fruits sold in First Quarter"              
+        text: "% growth in CS professionals by cohort between 2007 and 2015"              
       },
       data: [//array of dataSeries              
         { //dataSeries object
@@ -14,11 +15,14 @@
          /*** Change type "column" to "bar", "area", "line" or "pie"***/
          type: "column",
          dataPoints: [
-         { label: "banana", y: 18 },
-         { label: "orange", y: 29 },
-         { label: "apple", y: 40 },                                    
-         { label: "mango", y: 34 },
-         { label: "grape", y: 24 }
+         { label: "White men", y: 31},
+         { label: "White women", y: 10 },
+         { label: "Black men", y: 15},
+         { label: "Black women", y: -13 },
+         { label: "Hispanic men", y: 32}, 
+         { label: "Hispanic women", y: 11 },                                    
+         { label: "Asian men", y: 46 },
+         { label: "Asian Women", y: 34 }
          ]
        }
        ]
@@ -30,7 +34,11 @@
   <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 </head>
 <body>
-  <div id="chartContainer" style="height: 300px; width: 100%;">
+<p>Women, especially Black and Hispanic, are particularly underrepresented in computer science
+related fields, and the trends are not promising.  Note that the percentage of Black women in
+the field decreased during this time period.</p>
+  <div id="chartLocation" style="height: 300px; width: 75%;">
   </div>
+  <p>Source: Ascend Foundation as quoted in Susan Tedrick (2020) <em>Women of Color in Tech</em>.
 </body>
 </html>
