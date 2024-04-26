@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
+
 body {
 	font-family: Verdana, sans-serif;
 	color: #242626;
+	background-color: ivory;
 }
 
 h1, h2, h3 {
@@ -10,5 +12,10 @@ h1, h2, h3 {
 }
 
 h1 {
-	color: blue;
+	color: #3B4631;
+}
+
+.button {
+	background-color: #3B4631;
+	color: ivory;
 }
