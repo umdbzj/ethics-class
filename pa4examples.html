@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PA 4 Examples</title>
+	
+</head>
+<body>
+<h1>JavaScript Programming Assignment Examples</h1>
+<h2>Hello, World!</h2>
+<p>The first program nearly everyone writes is not quite enough unless you go through extra
+work to make it fit the requirements.</p>
+<button onclick="displayMessage()">Click me!  
+</button>
+<p id="first"> </p>
+
+<h2>Guess My Number</h2>
+<p>Another classic early program is this one: the computer has selected a number between 
+1 and 100, inclusive.  Try to guess the number in 10 or fewer tries.</p>
+<p> Click the 'Play the Game' button to start.</p>
+
+<div class="debug">
+<!--	<p id="rn">The target number is ....</p> -->
+	<p id="turn">Guess number: 0 </p>
+	<p id="guess"> </p>
+</div>
+
+<div class="game">
+<button onclick="playGMN()">Play the Game</button>
+
+<!-- Get player guess -->
+<p>
+	<label for="guessField">Enter a guess:</label>
+	<input type="number" id="guessField" class="guessField" />
+	<!-- input type="submit" value="Submit guess" class="guessSubmit" / -->
+
+
+<!-- Check guess -->
+<button id="subbutton" onclick="checkGuess()">Submit guess</button></p>
+<p id = "feedback">   </p>
+
+<button onclick="resetGame()">Reset</button>
+</div>
+
+
+<h2>Acknowledgements</h2>
+<p>For this page, I took inspiration from <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash">
+A First Splash into JavaScript</a> by mozilla.org, although
+I did quite a few things in a different (less elegant) fashion.  The guessing game has room
+for a lot of improvements!!  If you decide to take this as your starting point, I will expect 
+that you clean up some of the rough spots and make it look more attractive, without copying
+from an online example.</p>
+
+
+<!-- Most examples are putting the script tag at the end of the page and not the top -->
+<script type="text/javascript" src="pa4examples.js">
+</script>
+</body>
+</html>
